@@ -1,0 +1,12 @@
+#Use venv
+
+PS D:\fixtures> python
+No Python at '"C:\Users\Diana\AppData\Local\Programs\Python\Python312\python.exe'
+PS D:\fixtures> python
+No Python at '"C:\Users\Diana\AppData\Local\Programs\Python\Python312\python.exe'
+PS D:\fixtures> C:\Users\Diana\AppData\Local\Programs\Python\Python313\python.exe -m venv .venv
+PS D:\fixtures> .\.venv\Scripts\Activate
+(.venv) PS D:\fixtures> pip install requests pandas boto3 streamlit
+
+
+#
