@@ -187,12 +187,12 @@ if selected_team:
         lambda row: "Win" if row["scored"] > row["conceded"] else
                     "Draw" if row["scored"] == row["conceded"] else "Loss", axis=1)
     team_summary = {
-        "Matches": int(len(team_matches)),
-        "Goals Scored": int(team_matches["scored"].sum()),
-        "Goals Conceded": int(team_matches["conceded"].sum()),
-        "Wins": int((team_matches["result"] == "Win").sum()),
-        "Draws": int((team_matches["result"] == "Draw").sum()),
-        "Losses": int((team_matches["result"] == "Loss").sum())
+     "Matches": int(len(team_matches)),
+      "Goals Scored": int(team_matches["scored"].sum()),
+  	  "Goals Conceded": int(team_matches["conceded"].sum()),
+   	  "Wins": int((team_matches["result"] == "Win").sum()),
+	  "Draws": int((team_matches["result"] == "Draw").sum()),
+	  "Losses": int((team_matches["result"] == "Loss").sum())
     }
 
     st.write(team_summary)
