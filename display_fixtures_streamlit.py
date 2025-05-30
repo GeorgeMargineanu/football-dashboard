@@ -14,7 +14,7 @@ st.title("🏆 Football Matchday Dashboard")
 # AWS S3 Setup
 s3 = boto3.client("s3",
                  aws_access_key_id=st.secrets["AWS_ACCESS_KEY_ID"],
-                 aws_secret_access_key=st.secret["AWS_SECRET_ACCESS_KEY"],
+                 aws_secret_access_key=st.secrets["AWS_SECRET_ACCESS_KEY"],
                  region_name=st.secrets["AWS_DEFAULT_REGION"])
 bucket = "ssportss"
 folder = "football"
